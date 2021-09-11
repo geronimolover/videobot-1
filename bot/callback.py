@@ -44,12 +44,12 @@ async def cbstart(_, query: CallbackQuery):
                     "🌐 Terms & Condition", callback_data="cbinfo")
             ], [
                 InlineKeyboardButton(
-                    "💬 Group", url="https://t.me/VeezSupportGroup"),
+                    "💬 Group", url="https://t.me/DOSTI_GROUP_1234"),
                 InlineKeyboardButton(
-                    "📣 Channel", url="https://t.me/levinachannel")
+                    "📣 Channel", url="https://t.me/ABOUT_ABHINAS")
             ], [
                 InlineKeyboardButton(
-                    "👩🏻‍💻 Developer", url="https://t.me/dlwrml")
+                    "👩🏻‍💻 Developer", url="https://t.me/abhinasroy")
             ], [
                 InlineKeyboardButton(
                     "📚 All Command List", callback_data="cblist")
@@ -69,8 +69,8 @@ Client Library and Framework in Pure Python for Users and Bots.__
 
 👨🏻‍💻 __Thanks to the developers who participated in the development of this bot, the list of devs can be seen below:__
 
-👩🏻‍✈️ » [Levina Shavila](https://github.com/levina-lab)
-🤵🏻 » [Sammy-XD](https://github.com/Sammy-XD)
+👩🏻‍✈️ » [KING](https://t.me/abhinasroy)
+🤵🏻 » [UPDATE](https://t.me/abhinasroy)
 
 __This bot licensed under GNU-GPL 3.0 License__""",
         reply_markup=InlineKeyboardMarkup(
