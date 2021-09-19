@@ -43,13 +43,13 @@ def song(_, message):
         m.edit("❌ song not found.\n\nplease give a valid song name.")
         print(str(e))
         return
-    m.edit("📥 downloading...")
+    m.edit("📥 Please Wait...")
     try:
         with youtube_dl.YoutubeDL(ydl_ops) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"**🎧 By @{BOT_USERNAME}**"
+        rep = f"**🎧 By @free_music123**"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(float(dur_arr[i])) * secmul
@@ -64,7 +64,7 @@ def song(_, message):
         )
         m.delete()
     except Exception as e:
-        m.edit("❌ error, wait for dev to fix")
+        m.edit("❌ error")
         print(e)
 
     try:
@@ -258,8 +258,7 @@ async def vsong(_, message: Message):
         except Exception as e:
             print(e)
             await k.edit(
-                '❌ **video not found, please give a valid video name.\n\n» if you think this is an error report to '
-                '@DOSTI_GROUP_1234**')
+                '❌ **video not found, please give a valid video name.**')
             return
     except Exception as e:
         await k.edit(
@@ -274,7 +273,7 @@ async def vsong(_, message: Message):
             video_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
         caption = f"🏷 Name: {title}\n💡 Views: `{views}`\n🎧 Request by: {message.from_user.mention()}\n\n⚡ " \
-                  f"__Powered by @ABOUT_ABHINAS A.I__ "
+                  f"__Powered by @free_music123 "
         buttons = InlineKeyboardMarkup([[InlineKeyboardButton("🗑 Close", callback_data="cls")]])
         await k.edit("📤 **uploading file...**")
         await message.reply_video(video_file, caption=caption, duration=duration, thumb=thumb_name,
